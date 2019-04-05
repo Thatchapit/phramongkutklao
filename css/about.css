@@ -1,0 +1,30 @@
+.history_gray_background{
+    background-color: #f8f9fa;
+}
+
+.img_box{
+    background-image: url('https://picsum.photos/350');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image_only{
+    
+    height: 700px;
+}
+
+.image_person{
+    overflow: hidden;
+    height: 300px;
+}
+
+.image_person img{
+    height: 100%;
+}
+
+.search_btn button{
+    width: 250px;
+    height: 50px;
+}
