@@ -185,3 +185,57 @@ footer{
     height: 3px;
     background-color: blue;
 }
+
+h3.title_text_down{
+    position: relative;
+}
+h3.title_text_down::before{
+    content: " ";
+    height: 8.5px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+
+.gray_background{
+    background-color: #F1F4FA;
+}
+
+.row_link{
+    background-color: #fff;
+}
+
+.gray2_background{
+    background-color: #EFEEEE;
+}
+
+.register_form .row_wrap{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:rgba(16, 36, 94, 0.3) 0px 2px 6px 0px;
+}
+
+
+
+.register_form .head_title h1{
+    display: inline;
+}
+
+.register_form .head_title::before{
+    content: " ";
+    height: 25px;
+    width: 100px;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.register_form .row_wrap.wrap_login{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
