@@ -9,35 +9,38 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+<header>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 pt-2 pb-2">
                     <nav class="navbar navbar-expand-lg navbar-light nav-logo">
-                        <a class="navbar-brand" href="#">Navbar w/ text</a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""
+                                style="width:480px"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <ul class="navbar-nav ml-auto rsubold">
+                                <li class="nav-item pl-2 pr-2">
+                                    <a class="nav-link" href="contact.html">ติดต่อเรา</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                <li class="nav-item pl-2 pr-2">
+                                    <a class="nav-link" href="link.html">ลิงค์ที่เกี่ยวข้อง</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
+                                <li class="nav-item pl-2 pr-2">
+                                    <a class="nav-link" href="register.html">สมัครสมาชิก</a>
+                                </li>
+                                <li class="nav-item pl-2 pr-2">
+                                    <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
                                 </li>
                             </ul>
-                            <span class="navbar-text">
-                                Navbar text with an inline element
-                            </span>
                         </div>
                     </nav>
                 </div>
@@ -47,23 +50,65 @@
         <div class="nav-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col">
+                        <a href="index.html" class="w-100 h-100 d-flex justify-content-center align-items-center">
+                            <h5>หน้าแรก</h5>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col">
+                        <h5 class="ml-3 d-flex justify-content-center align-items-center">เกี่ยวกับ <span
+                                style="font-size:12px; margin-top: 5px" class="ml-1"><i
+                                    class="fas fa-caret-down"></i></span></h5>
+                        <ul class="submenu p-0 rsubold">
+                            <a href="about_history.html">
+                                <li class="d-flex justify-content-center align-items-center">ประวัติภาควิชา</li>
+                            </a>
+                            <a href="about_person.html">
+                                <li class="border-top border-bottom d-flex justify-content-center align-items-center">
+                                    โครงสร้างบุคลากร</li>
+                            </a>
+                            <a href="about_old.html">
+                                <li class="d-flex justify-content-center align-items-center">สมาคมศิษย์เก่า</li>
+                            </a>
+                        </ul>
                     </div>
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col">
+                        <a href="department.html" class="w-100 h-100 d-flex justify-content-center align-items-center">
+                            <h5>แผนก</h5>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col">
+                        <h5 class="ml-3 d-flex justify-content-center align-items-center">สมัครออนไลน์ <span
+                                style="font-size:12px; margin-top: 5px" class="ml-1"><i
+                                    class="fas fa-caret-down"></i></span></h5>
+                        <ul class="submenu p-0 rsubold">
+                            <a href="seminar.html"><li class="d-flex justify-content-center align-items-center">สมัครสัมมนา</li></a>
+                            <a href="elective.html"><li class="border-top border-bottom d-flex justify-content-center align-items-center">
+                                สมัครวิชาเลือก<br />(Elective)</li></a>
+                            <li class="d-flex justify-content-center align-items-center">ตรวจสอบสถานะ<br />ลงทะเบียน
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col active">
+                        <h5 class="ml-3 d-flex justify-content-center align-items-center">บทความ <span
+                                style="font-size:12px; margin-top: 5px" class="ml-1"><i
+                                    class="fas fa-caret-down"></i></span></h5>
+                        <ul class="submenu p-0 rsubold">
+                            <a href="news.html"><li class="d-flex justify-content-center align-items-center active">ข่าววิชาการ</li></a>
+                            <a href="health.html"><li class="border-top border-bottom d-flex justify-content-center align-items-center">
+                                บทความสุขภาพ</li></a>
+                            <a href="donwload.html"><li class="d-flex justify-content-center align-items-center">ดาวน์โหลดทั่วไป</li></a>
+                        </ul>
                     </div>
-                    <div class="col-2">
-                        <h5>หน้าแรก</h5>
+                    <div class="col">
+                        <a href="department.html" class="w-100 h-100 d-flex justify-content-center align-items-center">
+                            <h5>ภาพกิจกรรม</h5>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="clinic.html" class="w-100 h-100 d-flex justify-content-center align-items-center">
+                            <h5>คลินิกนอกเวลา</h5>
+                        </a>
                     </div>
                 </div>
             </div>
