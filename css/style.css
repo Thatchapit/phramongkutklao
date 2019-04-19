@@ -175,6 +175,9 @@ header .nav-menu .col .submenu li {
     background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
 }
 
+.navbar{
+    box-shadow: initial;
+}
 .navbar-nav .nav-item.active,.navbar-nav .nav-item:hover{
     background-color: rgba(19, 87, 152, 1);
     border-radius: 5px;
@@ -280,6 +283,8 @@ footer {
     background-color: #333333;
     height: 400px;
     color: white;
+    position: relative;
+    z-index: 556;
 }
 
 .line {
@@ -368,6 +373,12 @@ h3.title_text_down::before {
     border-top: 1px solid rgba(239, 238, 238, 0.45);
 }
 
+.submenu_mobile_item .active{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgba(19, 87, 152, 1);
+}
+
+
 .menu_mobile_item.active::before {
     content: " ";
     height: 100%;
@@ -390,7 +401,8 @@ h3.title_text_down::before {
     border-radius: 10px;
     border-color: #fff;
     font-family: 'rsuregular';
-    font-size: 21px;
+    font-size: 18px;
+    line-height: 20px;
 }
 .menu_mobile_item.active{
     background-color: #fff;
@@ -400,7 +412,7 @@ h3.title_text_down::before {
 .main_menu_mobile{
     position: absolute;
     top: 0;
-    padding-top: 86px;
+    padding-top: 110px;
     overflow: auto;
     height: 100vh;
     padding-right: 15px;
@@ -420,12 +432,52 @@ h3.title_text_down::before {
     width: 50px;
 }
 
+.news .card .card-img-top{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.download_table thead th,.download_table tbody td{
+    border: none;
+}
+
+
+.download_table thead th{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.download_table tbody td {
+    padding: 0;
+    padding-bottom: 20px;
+    height: 75px;   
+}
+.download_table tbody tr div{
+    background-color: white;
+    height: 100%;
+}
+
+.download_border{
+    border-left:  4px solid #f8f9fa;
+    font-size: 26px;
+    color: #ccc;
+}
+
 @media only screen and (max-width: 991px) {
+
+    .shadow_mobile{
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        margin: 0;
+        width: 100%;
+        max-width:100%;
+    }
+    
     #carouselControls{
         height: 300px;
     }
 
-    .new h1,.register_online h1,.academic h1,.advertise h1,.research h1,.event h1{
+    .new h1,.register_online h1,.academic h1,.advertise h1,.research h1,.event h1,h1.title_text{
         font-size: 2em;
     }
 
@@ -465,4 +517,34 @@ h3.title_text_down::before {
     footer address.col-12 i.h1{
         font-size: 2em;
     }
+
+    .department_title_mini{
+        text-align: center;
+    }
+
+    .department_title_mini h4{
+        font-size: 18px;
+    }
+
+    .department_title_mini p{
+        font-size: 16px;
+    }
+
+    .btn_register_seminar{
+        bottom: 0;
+        z-index: 555;
+    }
+
+    .btn_register_seminar button{
+        width: 100%;
+    }
+
+    .news .card .card-img-top{
+        height: 200px;
+    }
+
+    .download_table tbody td {
+        padding-bottom: 10px; 
+    }
+
   }

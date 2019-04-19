@@ -22,9 +22,26 @@
 
 .image_person img{
     height: 100%;
+    margin: 0 auto;
 }
 
 .search_btn button{
     width: 250px;
     height: 50px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .img_box{
+        height: 300px;
+    }
+
+    .image_only{
+    
+        height: 300px;
+    }
+
+    .about_person h4,.about_person p {
+        text-align: center;
+    }
 }
