@@ -12,18 +12,112 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <div class="menu_mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pt-4 pb-4 pl-4 pr-4 top_bar">
+                    <button type="button" name="" id="" class="btn btn-primary pl-4 pr-4">เข้าสู่ระบบ</button>
+                    <div class="float-right d-flex justify-content-center align-items-center h-100 close_menu-mobile"><i
+                            class="fas fa-times"></i></div>
+                </div>
+                <div class="col-12 pl-0 pr-0 main_menu_mobile">
+                    <div class="menu_mobile_item active w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">หน้าแรก</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#about"
+                        aria-controls="about" aria-expanded="false">
+                        <div class="w-100 pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">เกี่ยวกับ</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="about">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ประวัติภาควิชา</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">โครงสร้างบุคลากร</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมาคมศิษย์เก่า</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">แผนก</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#register"
+                        aria-controls="register" aria-expanded="false">
+                        <div class="w-100  pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">สมัครออนไลน์</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="register">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมัครสัมมนา</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมัครวิชาเลือก (Elective)</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ตรวจสอบสถานะลงทะเบียน</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#article"
+                        aria-controls="article" aria-expanded="false">
+                        <div class="w-100 pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">บทความ</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="article">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ข่าววิชาการ</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">บทความสุขภาพ</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ดาวน์โหลดทั่วไป</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ภาพกิจกรรม</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">คลินิกนอกเวลา</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ติดต่อเรา</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ลิงค์ที่เกี่ยวข้อง</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="position-relative">
+        <div class="position-absolute menu-mobile d-flex justify-content-center align-items-center">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 pt-2 pb-2">
+                <div class="col-12 pt-2 pb-2 d-block d-lg-none">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo-m.png" alt=""
+                                style="height: 120px"></a>
+
+                    </div>
+
+                </div>
+                <div class="col-12 pt-2 pb-2 d-none d-lg-block">
                     <nav class="navbar navbar-expand-lg navbar-light nav-logo">
                         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""
                                 style="width:480px"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
                         <div class="collapse navbar-collapse" id="navbarText">
                             <ul class="navbar-nav ml-auto rsubold">
                                 <li class="nav-item pl-2 pr-2">
@@ -45,7 +139,7 @@
             </div>
         </div>
 
-        <div class="nav-menu">
+        <div class="nav-menu d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col active">
@@ -80,9 +174,13 @@
                                 style="font-size:12px; margin-top: 5px" class="ml-1"><i
                                     class="fas fa-caret-down"></i></span></h5>
                         <ul class="submenu p-0 rsubold">
-                            <a href="seminar.html"><li class="d-flex justify-content-center align-items-center">สมัครสัมมนา</li></a>
-                            <a href="elective.html"><li class="border-top border-bottom d-flex justify-content-center align-items-center">
-                                สมัครวิชาเลือก<br />(Elective)</li></a>
+                            <a href="seminar.html">
+                                <li class="d-flex justify-content-center align-items-center">สมัครสัมมนา</li>
+                            </a>
+                            <a href="elective.html">
+                                <li class="border-top border-bottom d-flex justify-content-center align-items-center">
+                                    สมัครวิชาเลือก<br />(Elective)</li>
+                            </a>
                             <li class="d-flex justify-content-center align-items-center">ตรวจสอบสถานะ<br />ลงทะเบียน
                             </li>
                         </ul>
@@ -92,10 +190,16 @@
                                 style="font-size:12px; margin-top: 5px" class="ml-1"><i
                                     class="fas fa-caret-down"></i></span></h5>
                         <ul class="submenu p-0 rsubold">
-                            <a href="news.html"><li class="d-flex justify-content-center align-items-center">ข่าววิชาการ</li></a>
-                            <a href="health.html"><li class="border-top border-bottom d-flex justify-content-center align-items-center">
-                                บทความสุขภาพ</li></a>
-                            <a href="donwload.html"><li class="d-flex justify-content-center align-items-center">ดาวน์โหลดทั่วไป</li></a>
+                            <a href="news.html">
+                                <li class="d-flex justify-content-center align-items-center">ข่าววิชาการ</li>
+                            </a>
+                            <a href="health.html">
+                                <li class="border-top border-bottom d-flex justify-content-center align-items-center">
+                                    บทความสุขภาพ</li>
+                            </a>
+                            <a href="donwload.html">
+                                <li class="d-flex justify-content-center align-items-center">ดาวน์โหลดทั่วไป</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="col">
@@ -128,13 +232,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <section class="new pt-5 pb-5">
+    <section class="new  pt-lg-4 pb-5 pt-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3 mt-lg-3">
                     <h1 class="title_text pl-3">ข่าว</h1>
                 </div>
-                <div class="col-6 big_box pr-1">
+                <div class="col-lg-6 col-12 big_box pr-lg-1 mb-lg-0 mb-3 big_box_first">
                     <div class="box_content shadow_box">
                         <div style="background-image: url('https://picsum.photos/300')" class="image_content"></div>
                         <div class="box_content_detail p-3">
@@ -145,8 +249,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 big_box">
-                    <div class="container-fluid pr-0">
+                <div class="col-lg-6 col-12 big_box">
+                    <div class="container-fluid pr-lg-0">
                         <div class="row">
                             <div class="col-6 pl-0 pr-2 pb-2">
                                 <div class="box_content shadow_box"><img src="https://picsum.photos/550"
@@ -188,15 +292,84 @@
         </div>
     </section>
 
-    <section class="register_online pt-5 pb-5 gray2_background">
+    <section class="register_online pt-lg-5 pb-lg-5 pt-4 pb-4 gray2_background">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3">
                     <h1 class="title_text pl-3 d-inline-block">สมัครออนไลน์</h1>
                     <button type="button"
-                        class=" rsubold btn btn-primary d-inline-block float-right color_blueSky border-0 pt-3 pr-4 pl-4 pb-3">ตรวจสอบสถานะลงทะเบียน</button>
+                        class=" rsubold btn btn-primary d-none d-lg-inline-block float-right color_blueSky border-0 pt-3 pr-4 pl-4 pb-3">ตรวจสอบสถานะลงทะเบียน</button>
                 </div>
-                <div class="col-3">
+
+                <div class="col-12 d-block d-lg-none">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid p-0">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-1">
+                                            <div class="card shadow_box border-0">
+                                                <div class="card-img-top"
+                                                    style="background-image: url('https://picsum.photos/550')"></div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Title</h4>
+                                                    <label for="" class="p-0 m-0 text-muted"><i
+                                                            class="far fa-calendar-alt"></i> : 12:50</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-1">
+                                            <div class="card shadow_box border-0">
+                                                <div class="card-img-top"
+                                                    style="background-image: url('https://picsum.photos/550')"></div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Title</h4>
+                                                    <label for="" class="p-0 m-0 text-muted"><i
+                                                            class="far fa-calendar-alt"></i> : 12:50</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-fluid p-0">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-1">
+                                            <div class="card shadow_box border-0">
+                                                <div class="card-img-top"
+                                                    style="background-image: url('https://picsum.photos/550')"></div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Title</h4>
+                                                    <label for="" class="p-0 m-0 text-muted"><i
+                                                            class="far fa-calendar-alt"></i> : 12:50</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-1">
+                                            <div class="card shadow_box border-0">
+                                                <div class="card-img-top"
+                                                    style="background-image: url('https://picsum.photos/550')"></div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Title</h4>
+                                                    <label for="" class="p-0 m-0 text-muted"><i
+                                                            class="far fa-calendar-alt"></i> : 12:50</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators mt-3 mb-3 position-relative">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="col-3 d-lg-block d-none">
                     <div class="card shadow_box border-0">
                         <img class="card-img-top" src="https://picsum.photos/850" alt="">
                         <div class="card-body">
@@ -205,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-lg-block d-none">
                     <div class="card shadow_box border-0">
                         <img class="card-img-top" src="https://picsum.photos/550" alt="">
                         <div class="card-body">
@@ -214,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-lg-block d-none">
                     <div class="card shadow_box border-0">
                         <img class="card-img-top" src="https://picsum.photos/650" alt="">
                         <div class="card-body">
@@ -223,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-lg-block d-none">
                     <div class="card shadow_box border-0">
                         <img class="card-img-top" src="https://picsum.photos/355" alt="">
                         <div class="card-body">
@@ -232,14 +405,19 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 mt-2 d-flex justify-content-center align-items-center d-lg-none">
+                    <button type="button"
+                        class="rsubold btn btn-primary color_blueSky border-0 pt-3 pr-4 pl-4 pb-3">ตรวจสอบสถานะลงทะเบียน</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="pt-5 pb-5">
+    <section class="pt-lg-5 pb-lg-5 pt-4 pb-4 academic">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3">
                     <h1 class="title_text pl-3">วิชาการและประกันคุณภาพ</h1>
                 </div>
                 <div class="col">
@@ -251,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-none d-lg-block">
                     <div class="card card_hover">
                         <img class="card-img-top" src="https://picsum.photos/250" alt="">
                         <div class="card-body">
@@ -260,7 +438,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-none d-lg-block">
                     <div class="card card_hover">
                         <img class="card-img-top" src="https://picsum.photos/365" alt="">
                         <div class="card-body">
@@ -273,78 +451,24 @@
         </div>
     </section>
 
-    <section class="advertise pt-5 pb-5 gray2_background">
+    <section class="advertise pt-lg-5 pb-lg-5 pt-4 pb-4 gray2_background">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3">
                     <h1 class="title_text pl-3">ประชาสัมพันธ์</h1>
                 </div>
-                <div class="col-6">
-                    <div class="card mb-3 card_long_shadow" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
+                <div class="col-lg-6 col-12">
+                    <div class="card mb-3 card_long_shadow">
+                        <div class="row no-gutters h-100 m-0">
+                            <div class="col-lg-4 col-5 h-100">
                                 <div class="advertise_img" style="background-image: url('https://picsum.photos/150')">
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8 col-7 h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3 card_long_shadow" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <div class="advertise_img" style="background-image: url('https://picsum.photos/150')">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3 card_long_shadow" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <div class="advertise_img" style="background-image: url('https://picsum.photos/550')">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card mb-3 card_long_shadow" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <div class="advertise_img" style="background-image: url('https://picsum.photos/650')">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text d-lg-block d-none">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="card-text p_mobile d-block d-lg-none">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -357,13 +481,13 @@
     <section class="person pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="card border-0" style="max-width: 540px;">
+                <div class="col-lg col-12">
+                    <div class="card border-0">
                         <div class="row no-gutters">
-                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
                                 <img src="https://picsum.photos/525" class="card-img rounded-circle" alt="...">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
@@ -374,13 +498,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-0" style="max-width: 540px;">
+                <div class="col-lg col-12">
+                    <div class="card border-0">
                         <div class="row no-gutters">
-                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
                                 <img src="https://picsum.photos/525" class="card-img rounded-circle" alt="...">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
@@ -394,79 +518,100 @@
             </div>
         </div>
     </section>
-    <section class="pt-5 pb-5 gray2_background">
+    <section class="pt-lg-5 pb-lg-5 pt-4 pb-4 gray2_background research">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3">
                     <h1 class="title_text pl-3">วิจัย</h1>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/450" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Text</p>
+                <div class="col-lg col-12 mb-lg-0 mb-4">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row">
+                            <img class="card-img-top col-12" src="https://picsum.photos/450" alt="">
+                            <div class="card-body col-12">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/250" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Text</p>
+
+                <div class="col-lg col-12 mb-lg-0 mb-4">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row m-0">
+                            <img class="card-img-top col-lg-12 col-6 image_mini p-0" src="https://picsum.photos/450"
+                                alt="">
+                            <div class="card-body col-lg-12 col-6">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/365" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Text</p>
+
+                <div class="col-lg col-12 mb-lg-0">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row m-0">
+                            <img class="card-img-top col-lg-12 col-6 image_mini p-0" src="https://picsum.photos/450"
+                                alt="">
+                            <div class="card-body col-lg-12 col-6">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="pt-5 pb-5">
+    <section class="pt-lg-5 pb-lg-5 pt-4 pb-4 event">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-lg-4 mb-3">
                     <h1 class="title_text pl-3">ภาพกิจกรรม</h1>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/450" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text mb-2">Text</p>
-                            <label for="" class="float-right m-0">Tag: <span
-                                    class="text-info"><strong>AAA</strong></span></label>
+                <div class="col-lg col-12 mb-lg-0 mb-4">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row m-0">
+                            <img class="card-img-top col-lg-12 col-6 image_mini p-0" src="https://picsum.photos/450"
+                                alt="">
+                            <div class="card-body col-lg-12 col-6">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text mb-2">Text</p>
+                                <div class="w-100 "></div>
+                                <label for="" class="float-right m-0">Tag: <span
+                                        class="text-info"><strong>AAA</strong></span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/450" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text mb-2">Text</p>
-                            <label for="" class="float-right m-0">Tag: <span
-                                    class="text-info"><strong>AAA</strong></span></label>
+                <div class="col-lg col-12 mb-lg-0 mb-4">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row m-0">
+                            <img class="card-img-top col-lg-12 col-6 image_mini p-0" src="https://picsum.photos/450"
+                                alt="">
+                            <div class="card-body col-lg-12 col-6 -">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text mb-2">Text</p>
+                                <label for="" class="float-right m-0">Tag: <span
+                                        class="text-info"><strong>AAA</strong></span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="https://picsum.photos/450" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text mb-2">Text</p>
-                            <label for="" class="float-right m-0">Tag: <span
-                                    class="text-info"><strong>AAA</strong></span></label>
+                <div class="col-lg col-12 mb-lg-0 mb-4">
+                    <div class="card card_hover container-fluid p-0">
+                        <div class="row m-0">
+                            <img class="card-img-top col-lg-12 col-6 image_mini p-0" src="https://picsum.photos/450"
+                                alt="">
+                            <div class="card-body col-lg-12 col-6">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text mb-2">Text</p>
+                                <label for="" class="float-right m-0">Tag: <span
+                                        class="text-info"><strong>AAA</strong></span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -476,11 +621,10 @@
     </section>
 
     <footer class="pt-5 rsubold">
-        <div class="container pt-5">
+        <div class="container pt-lg-5 pt-0">
             <div class="row">
-                <address class="col">
+                <address class="col-lg col-12">
                     <h3>กองอายุรกรรมโรงพยาบาลพระมงกุฎเกล้า</h3>
-                    <br />
                     <p class="mb-4">อาคารเฉลิมพระเกียรติ 6 รอบ พระชนมพรรษา ชั้น 3 โรงพยาบาลพระมงกุฎเกล้า<br />
                         315 ถนนราชวิถี เขตราชเทวี กรุงเทพฯ 10400 <br />
                         <i style=" transform: scaleX(-1);" class="fas fa-phone mr-2 ml-2 mt-3"></i>0-2763-3280<br />
@@ -490,7 +634,7 @@
                     <i class="fab fa-youtube h1 ml-3 mr-3"></i>
                     <i class="fab fa-line h1"></i>
                 </address>
-                <div class="col">
+                <div class="col d-lg-block d-none">
                     <p><small>เว็บไซต์อย่างเป็นทางการของกองอายุรกรรม โรงพยาบาลพระมงกุฎเกล้า<br />
                             สงวนลิขสิทธิ์ พ.ศ. ๒๕๕๔-๒๕๕๕<br />
                             กองอายุรกรรม โรงพยาบาลพระมงกุฎเกล้า<br />
@@ -515,6 +659,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script>
+        $(document).ready(function () {
+            $(".menu-mobile").click(function () {
+               $(".menu_mobile").addClass("active");
+            });
+
+            $(".close_menu-mobile").click(function () {
+               $(".menu_mobile").removeClass("active");
+            });
+
+
+            
+        });
+    </script>
+
 </body>
 
 </html>
